@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>index page</h1>
+{% for student in x %}
+<a href="{{url_for('details',id=student.id)}}"><h1>{{ student.id }}</h1>
+
+<hr>
+{% endfor %}
+
+{% endblock content %}
+
+{% block bgcolor %}skyblue{% endblock bgcolor %}
+
+{% block title %}index{% endblock title %}
